@@ -34,9 +34,9 @@ tag_type = 'IOBES'
 # 0: exclude structure entities.
 structure = '1'
 
-best_model_path = './best_model(CO2RR)/best.pt'
+best_model_path = './best_model/best.pt'
 save_dir = best_model_path.split('/')[1]+'_'+best_model_path.split('/')[2]+'_'+best_model_path.split('/')[3]+'/'
-datafile = f"./predict/dataset/Elsevier_CO2RR_00707.csv"
+datafile = f"./predict/dataset/ACS_CO2RR_00343.csv"
 
 def set_random_seed(random_seed):
     torch.manual_seed(random_seed)
