@@ -11,7 +11,16 @@ import random
 import glob
 import time
 
-n_epochs = 1
+def set_random_seed(random_seed):
+    torch.manual_seed(random_seed)
+    torch.cuda.manual_seed(random_seed)
+    torch.cuda.manual_seed_all(random_seed) 
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    np.random.seed(random_seed)
+    random.seed(random_seed)
+
+n_epochs = 100
 full_finetuning = True
 savename = time.strftime("%Y%m%d")
 
@@ -31,20 +40,9 @@ tag_type = 'IOBES'
 structure = '1'
 batch_size = 32
 k_fold = 10
-
 datafile = f"./dataset/new_{tag_type}_matbert_cased.csv"
 
-def set_random_seed(random_seed):
-    torch.manual_seed(random_seed)
-    torch.cuda.manual_seed(random_seed)
-    torch.cuda.manual_seed_all(random_seed) 
-    torch.backends.cudnn.deterministic = True
-    torch.backends.cudnn.benchmark = False
-    np.random.seed(random_seed)
-    random.seed(random_seed)
-
 for alias, split in splits.items():
-    
     for model_name in ['matbert']:
 
         save_dir = os.getcwd()+'/{}_{}_{}/'.format(model_name, tag_type, savename)
