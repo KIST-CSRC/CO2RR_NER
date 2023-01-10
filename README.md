@@ -3,12 +3,12 @@
 ## Introduction
 ### 1) Model structures for named entity recognition (NER) 
 <p align="center">
-  <img src="./info/model_structure.png" width="80%" height="80%" />
+  <img src="./Info/model_structure.png" width="80%" height="80%" />
 </p>
 
 ### 2) Exclusion of noise papers using Doc2vec and latent dirichlet allocation (LDA) 
 <p align="center">
-  <img src="./info/exclusion_noise_paper.png" width="80%" height="80%" />
+  <img src="./Info/exclusion_noise_paper.png" width="80%" height="80%" />
 </p>
 
 Two techniques are needed to automatically extract data from the literature and utilize the extracted data. The first is a technology to selectively classify only the papers we want through preprocess of paper, and the second is a technology, called NER, to automatically extract information from the literature.
