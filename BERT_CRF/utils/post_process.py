@@ -62,7 +62,7 @@ class Post_processing:
             tmp = []
             tmp2 = []
             for i in range(0,len(corpus)):
-                if corpus[i] != '[CLS]' and corpus[i] != '[SEP]': 
+                if corpus[i] != '[CLS]' or corpus[i] != '[SEP]': 
                     token_loc = [corpus[i], number]
                     tmp.append(token_loc)
                     if corpus[i][:2] != '##':
