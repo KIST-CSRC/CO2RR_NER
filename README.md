@@ -182,4 +182,5 @@ We also used the Bi-LSTM CRF as the NER model and compared the performance of th
 For more details, see the paper below.
 Please cite us if you are using our model in your research work: <br />
 
-  [1] Our paper
+  [1] 	[Choi, Jiwoo, et al. "Deep learning of electrochemical CO 2 conversion literature reveals research trends and directions." Journal of Materials Chemistry A (2023).]
+  (https://pubs.rsc.org/en/content/articlelanding/2023/ta/d3ta02780e#!divCitation)
